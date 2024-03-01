@@ -14,11 +14,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 5rem 0 0;
-  padding-right: 5rem;
+  margin: 0 1rem 0 0;
+  padding-right: 1rem;
   border-right: 1px solid #d8d2d2cd;
+  width: 180px;
 }
 
-.left-box p {
+.left-box .p {
   color: 1px solid #d8d2d2cd;
 }

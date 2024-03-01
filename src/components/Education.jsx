@@ -13,7 +13,7 @@ export const Education = () => {
 
           <div className={classes['right-box']}>
             <p>
-              모두의 연구소가 주관하는 자바스크립트 웹 풀스택을 수강하고
+              모두의 연구소가 주관하는 자바스크립트 웹 풀스택 과정을 수강하고
               있습니다.
             </p>
           </div>

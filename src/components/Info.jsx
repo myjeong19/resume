@@ -16,6 +16,12 @@ export const Info = () => {
           동료들과 지속적으로 피드백을 주고받으며 함께 성장해 나가는 과정을
           소중히 여깁니다.
         </p>
+
+        <ul className={classes.ul}>
+          <li>React의 내부 동작 원리에 관심이 많습니다.</li>
+          <li>CSS Module을 사용해 UI를 제공하는 것에 큰 흥미를 느낍니다.</li>
+          <li>사용자의 불편함에 집착해 개선하는 일을 좋아합니다.</li>
+        </ul>
       </section>
     </header>
   );

@@ -9,6 +9,8 @@ export const Skills = () => {
       <ul className={classes.ul}>
         <Skill />
       </ul>
+
+      <ul className={classes.description}></ul>
     </section>
   );
 };

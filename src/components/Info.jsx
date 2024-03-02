@@ -4,7 +4,7 @@ import { CustomLink } from './ui/CustomLink';
 
 export const Info = () => {
   return (
-    <Container containerTag='header' innerTitleTag='h1' title='이력서'>
+    <Container ContainerTag='header' InnerTitleTag='h1' title='이력서'>
       <section className={classes.section}>
         <p>
           안녕하세요. <br />

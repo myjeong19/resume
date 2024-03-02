@@ -1,19 +1,26 @@
+import PropTypes from 'prop-types';
+
 import classes from './css/Container.module.css';
 
 export const Container = ({
-  containerTag,
-  innerTitleTag,
+  ContainerTag = 'section',
+  InenerTitleTag = 'h2',
   title,
   children,
   className,
 }) => {
-  const ContainerTag = containerTag || 'section';
-  const InenerTitleTag = innerTitleTag || 'h2';
-
   return (
     <ContainerTag className={`${classes.container} ${className}`}>
       <InenerTitleTag className={classes.title}>{title}</InenerTitleTag>
       {children}
     </ContainerTag>
   );
+};
+
+Container.propTypes = {
+  ContainerTag: PropTypes.string,
+  InenerTitleTag: PropTypes.string,
+  title: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
 };

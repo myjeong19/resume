@@ -1,9 +1,9 @@
 import classes from './css/Layout.module.css';
+import { Container } from './ui/Container';
 
 export const Education = () => {
   return (
-    <section className={classes.section}>
-      <h2>교육</h2>
+    <Container title='교육'>
       <ul className={classes.ul}>
         <li className={classes.li}>
           <div className={classes['left-box']}>
@@ -16,6 +16,6 @@ export const Education = () => {
           </div>
         </li>
       </ul>
-    </section>
+    </Container>
   );
 };

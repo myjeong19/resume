@@ -1,16 +1,14 @@
 import classes from './css/Skills.module.css';
+import { Container } from './ui/Container';
 
 import { Skill } from './Skill';
 
 export const Skills = () => {
   return (
-    <section className={classes.section}>
-      <h2>기술</h2>
+    <Container title='기술'>
       <ul className={classes.ul}>
         <Skill />
       </ul>
-
-      <ul className={classes.description}></ul>
-    </section>
+    </Container>
   );
 };

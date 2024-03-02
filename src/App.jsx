@@ -2,6 +2,7 @@ import './App.css';
 import { Action } from './components/Action';
 import { Education } from './components/Education';
 import { Info } from './components/Info';
+import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 
 export const App = () => {
@@ -9,8 +10,9 @@ export const App = () => {
     <div className='app'>
       <Info />
       <Skills />
-      <Action />
+      <Projects />
       <Education />
+      <Action />
     </div>
   );
 };

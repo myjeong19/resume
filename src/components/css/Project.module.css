@@ -1,0 +1,39 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #111;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.box h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #111;
+  width: 100px;
+  height: 25px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.descriptions {
+  list-style: square;
+  margin-top: 1rem;
+}
+
+.descriptions strong {
+  border-bottom: 1px solid #111;
+}
+
+.description {
+  padding: 1rem;
+}

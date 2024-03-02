@@ -1,8 +1,22 @@
 .app {
   display: flex;
   flex-direction: column;
+  width: 50vw;
 }
 
 header {
   margin-top: 5rem;
+}
+
+.swiper {
+  width: 75vw;
+  height: 200px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rem !important;
 }

@@ -3,10 +3,15 @@
 }
 
 .ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   margin-top: 3rem;
 }
 
 .description {
   margin-top: 3rem;
+}
+
+.card {
+  margin-bottom: 10rem;
 }

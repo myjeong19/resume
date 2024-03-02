@@ -1,21 +1,34 @@
 import classes from './css/Skill.module.css';
-import ReactIcon from '../assets/react.svg';
-import ExprssIcon from '../assets/express.svg';
-import SequelizeIcon from '../assets/sequelize.svg';
+import { SKILLS } from '../assets/logo';
 
-const skillList = [
-  { title: 'React', icon: ReactIcon },
-  { title: 'Exprss', icon: ExprssIcon },
-  { title: 'Sequelize', icon: SequelizeIcon },
-];
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation, Autoplay } from 'swiper/modules';
 
 export const Skill = () => {
-  const elementSkill = skillList.map((skill, index) => (
-    <li className={classes.li} key={skill + index}>
+  const elementSkill = SKILLS.map(skill => (
+    <SwiperSlide key={skill.title} className={classes.card}>
       <img src={skill.icon} alt={skill.title} />
       <strong>{skill.title}</strong>
-    </li>
+    </SwiperSlide>
   ));
 
-  return <>{elementSkill}</>;
+  return (
+    <Swiper
+      slidesPerView={10}
+      spaceBetween={0}
+      navigation={true}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
+      modules={[Navigation, Autoplay]}
+    >
+      {elementSkill}
+    </Swiper>
+  );
 };
